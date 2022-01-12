@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("concrete-road.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    margin-top: 30px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h3,h4
+{
+	color: rgb(255, 241, 43) !important;
+}
+table {
+  font-family: arial, sans-serif;
+  font-size: medium;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #00ffff;
+}
+tr:nth-child(odd) {
+  background-color: #ffff00;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Valet Parking </title>
+</head>
+<body onload="add();">
+
+<center>
+<h1>Valet Parking</h1>
+<h3>Code for moving the car</h3>
+<table>
+	<tr>
+	  <th>Car color</th>
+	  <th>Up</th>
+	  <th>Down</th>
+	  <th>Left</th>
+	  <th>Right</th>
+	</tr>
+	<tr>
+		<td>Green</td>
+		<td>Up arrow key</td>
+		<td>Down arrow key</td>
+		<td>Left  arrow key</td>
+		<td>Right arrow key</td>
+	</tr>
+	</table>
+<h4>
+	<b class="text-danger">NOTE : </b> IF CAR IS NOT VISIBLE PRESS ANY ARROW KEY
+</h4>
+
+	<canvas id="myCanvas" height="600" width="800">Your browser doesn't support canvas</canvas>
+
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
